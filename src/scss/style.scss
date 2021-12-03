@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before {
+        box-sizing: border-box;
+    }
+
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+@import "parts/fonts";
+@import "parts/variables";
+@import "parts/service-list";
+@import "parts/body";
+@import "parts/section";
+@import "parts/card";
+@import "parts/section-download";
+@import "parts/download-link";
+@import "parts/animation-content";

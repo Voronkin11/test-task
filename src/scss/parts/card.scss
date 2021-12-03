@@ -1,0 +1,38 @@
+.card {
+    color: $card_color;
+
+    &__icon {
+        width: 35px;
+        margin-bottom: 25px;
+
+        @media screen and (min-width: 1170px) {
+            width: 54px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__heading {
+        margin-bottom: 35px;
+        font-size: $xs_f_size_mobile;
+        font-weight: 700;
+        color: $card_heading_color;
+        line-height: 1.2;
+        letter-spacing: 0.44px;
+
+        @media screen and (min-width: 760px) {
+            margin-bottom: 50px;
+            font-size: $l_f_size_tablet;
+        }
+    }
+
+    &__text {
+        font-size: $xxs_f_size_mobile;
+        line-height: 1.5;
+        letter-spacing: 0.25px;
+
+        @media screen and (min-width: 760px) {
+            font-size: $xxs_f_size_tablet;
+        }
+    }
+}

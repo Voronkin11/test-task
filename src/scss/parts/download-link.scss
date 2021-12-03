@@ -1,0 +1,32 @@
+.download-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 54px;
+    font-size: $xxs_f_size_mobile;
+    font-weight: 700;
+    line-height: 1.218125;
+    color: $download_link_color;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $download_link_bg;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:focus,
+    &:hover {
+        box-shadow:  0 0 5px 5px $download_link_bg,  inset 0 0 50px 50px $download_link_color;
+        color: $download_link_bg;
+        text-shadow: 0 0 1.5em $download_link_bg;
+        background-color: $download_link_bg;
+        outline: none;
+    }
+
+    @media screen and (min-width: 1170px) {
+        width: 390px;
+        height: 74px;
+        font-size: $xs_f_size_tablet;
+        letter-spacing: 0.457143px;
+    }
+}

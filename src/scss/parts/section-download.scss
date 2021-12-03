@@ -1,0 +1,122 @@
+.section-download {
+    position: relative;
+    padding-top: 196px;
+    color: $section_download_color;
+    background-color: $section_download_bg;
+
+    @media screen and (min-width: 760px) {
+        padding-top: 70px;
+    }
+    
+    @media screen and (min-width: 1170px) {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
+    
+    &::before {
+        @media screen and (min-width: 1170px) {
+            content: ""; 
+            position: absolute;
+            display: block;
+            right: 100%;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: $section_download_bg;
+            z-index: -1;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -40px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../img/broshure_mobile_bg.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        z-index: 1;
+
+        @media screen and (min-width: 760px) {
+            display: none;
+        }
+
+    }
+
+    &__container {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 5px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/download_mobile_bg.svg");
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: 1;
+            
+            @media screen and (min-width: 1170px) {
+                top: 10px;
+                background-image: url("../img/download_tablet_bg.svg");
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 0 30px 65px;
+        z-index: 10;
+
+        @media screen and (min-width: 1170px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 0 0 85px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 49px;
+        font-size: $xs_f_size_mobile;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: 0.64px;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 760px) {
+            margin-right: 95px;
+            font-size: $l_f_size_tablet;
+        }
+    }
+
+    &__text {
+        max-width: 190px;
+        font-size: $xxs_f_size_mobile;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+
+        @media screen and (min-width: 1170px) {
+            max-width: 217px;
+            padding-top: 46px;
+            font-size: $s_f_size_tablet;
+            letter-spacing: 0.45px;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        transform: translateY(50%);
+    }
+}

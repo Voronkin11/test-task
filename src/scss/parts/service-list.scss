@@ -1,0 +1,39 @@
+.service-list {
+    list-style: none;
+
+
+    @media screen and (min-width: 590px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 25px;
+        padding: 0 25px;
+    }
+
+    @media screen and (min-width: 760px) {
+        gap: 100px 50px;
+        padding: 0 50px;
+    }
+
+    @media screen and (min-width: 1170px) {
+        gap: 100px 150px;
+        padding: 0 50px 0 100px;
+    }
+
+    &__item {
+        margin-bottom: 52px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 590px) {
+            flex: calc(100% / 2 - 50px);
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 760px) {
+            flex: calc(100% / 2 - 100px);
+            margin-bottom: 0;
+        }
+    }
+}
