@@ -5,7 +5,7 @@
     background-color: $section_download_bg;
 
     @media screen and (min-width: 760px) {
-        padding-top: 70px;
+        padding-top: 72px;
     }
     
     @media screen and (min-width: 1170px) {
@@ -23,7 +23,6 @@
             width: 100vw;
             height: 100%;
             background-color: $section_download_bg;
-            z-index: -1;
         }
     }
 
@@ -37,8 +36,7 @@
         left: 0;
         background-image: url("../img/broshure_mobile_bg.png");
         background-repeat: no-repeat;
-        background-position: right top;
-        z-index: 1;
+        background-position: top right;
 
         @media screen and (min-width: 760px) {
             display: none;
@@ -53,18 +51,18 @@
             content: "";
             position: absolute;
             display: block;
-            top: 5px;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-image: url("../img/download_mobile_bg.svg");
             background-repeat: no-repeat;
+            background-position-y: 5px;
             opacity: 0.1;
-            z-index: 1;
             
             @media screen and (min-width: 1170px) {
-                top: 10px;
                 background-image: url("../img/download_tablet_bg.svg");
+                background-position-y: 7px;
             }
         }
     }
@@ -78,12 +76,12 @@
             display: flex;
             flex-wrap: wrap;
             width: 50%;
-            padding: 0 0 85px;
+            padding: 0 0 90px;
         }
     }
 
     &__heading {
-        margin-bottom: 49px;
+        margin-bottom: 50px;
         font-size: $xs_f_size_mobile;
         font-weight: 800;
         line-height: 1.2;
@@ -104,7 +102,7 @@
 
         @media screen and (min-width: 1170px) {
             max-width: 217px;
-            padding-top: 46px;
+            padding-top: 42px;
             font-size: $s_f_size_tablet;
             letter-spacing: 0.45px;
         }

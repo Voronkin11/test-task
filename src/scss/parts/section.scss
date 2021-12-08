@@ -4,30 +4,15 @@
 
     &--blue-dark {
         background-color: $section_dark_bg;
-        
-        &::before {
-            content: "";
-            position: absolute;
-            top: 179px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: url("../img/icon_mobile_bg.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: top, center;
-            z-index: 1;
+        background-image: url("../img/icon_mobile_bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top 180px center;
 
-            @media screen and (min-width: 590px) {
-                top: 140px;
-            }
-
-            @media screen and (min-width: 760px) {
-                top: 180px;
-                background-size: auto;
-                background-image: url("../img/icon_tablet_bg.svg");
-                
-            }
+        @media screen and (min-width: 760px) {
+            background-image: url("../img/icon_tablet_bg.svg");
+            background-size: auto;
+            background-position: top 180px;
         }
     }
 
@@ -39,10 +24,10 @@
         }
 
         & .section__content {
-            padding-top: 137px;
+            padding-top: 97px;
             
             @media screen and (min-width: 1170px) {
-                padding-top: 420px;
+                padding-top: 375px;
             }
         }
     }
@@ -50,7 +35,7 @@
     &__download {
         @media screen and (min-width: 1170px) {
             position: absolute;
-            top: -108px;
+            top: -110px;
             left: 0;
             width: 100%;
         }
@@ -62,32 +47,33 @@
         @media screen and (min-width: 760px) {
             display: block;
             position: absolute;
-            top: -80%;
+            right: 75px;
+            top: -300px;
             width: 60%;
             height: 100%;
-            right: -15px;
             background-image: url("../img/broshure_tablet_bg.png");
             background-size: contain;
-            background-position: top right;
+            background-position: top right -17px;
             background-repeat: no-repeat;
             z-index: 10;
         }
 
         @media screen and (min-width: 1170px) {
-            top: -180px;
+            right: 0;
+            top: -182px;
             background-size: auto;
         }
     }
 
     &__content {
         position: relative;
-        padding: 135px 30px 81px;
+        padding: 95px 30px 80px;
         z-index: 1;
 
         @media screen and (min-width: 1170px) {
             max-width: 1172px;
             margin: 0 auto 0;
-            padding: 180px 0 293px;
+            padding: 140px 0 295px;
         }
     }
 
@@ -132,16 +118,13 @@
         position: relative;
         left: 1px;
         margin-bottom: 60px;
+        padding-top: 40px;
         font-size: $s_f_size_mobile;
         font-weight: 900;
         color: $light_heading_color;
         line-height: 1.2;
         letter-spacing: 0.9px;
         text-transform: uppercase;
-
-        pre {
-            font-family: inherit;
-        }
 
         @media screen and (min-width: 1170px) {
             margin-bottom: 120px;
@@ -152,7 +135,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: -40px;
+            top: 0;
             left: 0;
             display: block;
             width: 19px;
